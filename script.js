@@ -3,42 +3,42 @@
 //functionality for the nav dropdown on the desktop view
 
 //lists
-const drop1 = document.querySelector('.drop1');
-const drop2 = document.querySelector('.drop2');
+const drop1Desktop = document.querySelector('.drop1Desktop');
+const drop2Desktop = document.querySelector('.drop2Desktop');
 
 //dropdown buttons
-const featuresOpen = document.querySelector('.featuresOpen');
-const featuresClose = document.querySelector('.featuresClose');
+const featuresOpenDesktop = document.querySelector('.featuresOpenDesktop');
+const featuresCloseDesktop = document.querySelector('.featuresCloseDesktop');
 
-const companyOpen = document.querySelector('.companyOpen');
-const companyClose = document.querySelector('.companyClose');
+const companyOpenDesktop = document.querySelector('.companyOpenDesktop');
+const companyCloseDesktop = document.querySelector('.companyCloseDesktop');
 
 //click events
 
 //for features dropdown
-featuresOpen.addEventListener('click', function() {
-    featuresOpen.classList.add('hidden');
-    featuresClose.classList.remove('hidden');
-    drop1.classList.remove('hidden');
+featuresOpenDesktop.addEventListener('click', function() {
+    featuresOpenDesktop.classList.add('hidden');
+    featuresCloseDesktop.classList.remove('hidden');
+    drop1Desktop.classList.remove('hidden');
 });
 
-featuresClose.addEventListener('click', function() {
-    featuresOpen.classList.remove('hidden');
-    featuresClose.classList.add('hidden');
-    drop1.classList.add('hidden');
+featuresCloseDesktop.addEventListener('click', function() {
+    featuresOpenDesktop.classList.remove('hidden');
+    featuresCloseDesktop.classList.add('hidden');
+    drop1Desktop.classList.add('hidden');
 });
 
 //for company dropdown
-companyOpen.addEventListener('click', function() {
-    companyOpen.classList.add('hidden');
-    companyClose.classList.remove('hidden');
-    drop2.classList.remove('hidden');
+companyOpenDesktop.addEventListener('click', function() {
+    companyOpenDesktop.classList.add('hidden');
+    companyCloseDesktop.classList.remove('hidden');
+    drop2Desktop.classList.remove('hidden');
 });
 
-companyClose.addEventListener('click', function() {
-    companyOpen.classList.remove('hidden');
-    companyClose.classList.add('hidden');
-    drop2.classList.add('hidden');
+companyCloseDesktop.addEventListener('click', function() {
+    companyOpenDesktop.classList.remove('hidden');
+    companyCloseDesktop.classList.add('hidden');
+    drop2Desktop.classList.add('hidden');
 });
 
 
@@ -57,3 +57,42 @@ closeBtn.addEventListener('click', function() {
     navBar.classList.add('hidden');
     openBtn.classList.remove('hidden');
 })
+
+//lists
+const drop1Mobile = document.querySelector('.drop1Mobile');
+const drop2Mobile = document.querySelector('.drop2Mobile');
+
+//dropdown buttons
+const featuresOpenMobile = document.querySelector('.featuresOpenMobile');
+const featuresCloseMobile= document.querySelector('.featuresCloseMobile');
+
+const companyOpenMobile = document.querySelector('.companyOpenMobile');
+const companyCloseMobile = document.querySelector('.companyCloseMobile');
+
+//click events
+
+//for features dropdown
+featuresOpenMobile.addEventListener('click', function() {
+    featuresOpenMobile.classList.add('hidden');
+    featuresCloseMobile.classList.remove('hidden');
+    drop1Mobile.classList.remove('hidden');
+});
+
+featuresCloseMobile.addEventListener('click', function() {
+    featuresOpenMobile.classList.remove('hidden');
+    featuresCloseMobile.classList.add('hidden');
+    drop1Mobile.classList.add('hidden');
+});
+
+//for company dropdown
+companyOpenMobile.addEventListener('click', function() {
+    companyOpenMobile.classList.add('hidden');
+    companyCloseMobile.classList.remove('hidden');
+    drop2Mobile.classList.remove('hidden');
+});
+
+companyCloseMobile.addEventListener('click', function() {
+    companyOpenMobile.classList.remove('hidden');
+    companyCloseMobile.classList.add('hidden');
+    drop2Mobile.classList.add('hidden');
+});
