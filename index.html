@@ -12,8 +12,65 @@
   <!-- navbar for mobile -->
   <header>
     <img src="images/logo.svg" alt="company logo">
-    <button class="nav"><img src="images/icon-menu.svg" alt="menu icon"></button>
+    <button class="openNav"><img src="images/icon-menu.svg" alt="menu icon"></button>
   </header>
+
+  <section class="navigationBar hidden">
+    <div class="emptyDiv"></div>
+
+    <div class="nav">
+      <button class="closeNav"><ion-icon name="close-outline"></ion-icon></button>
+
+      <div>
+        <div class="navitem">
+          <ul class="firstItem">
+            <li class="features featuresOpen">Features <ion-icon name="chevron-down-outline"></ion-icon></li>
+            <li class="features featuresClose hidden">Features <ion-icon name="chevron-up-outline"></ion-icon></li>
+            <ul class="drop1 hidden">
+              <li>
+                <img src="images/icon-todo.svg" alt="a todo icon">
+                <a href="#">Todo list</a>
+              </li>
+
+              <li>
+                <img src="images/icon-calendar.svg" alt="a calendar icon">
+                <a href="#">Calendar</a>
+              </li>
+
+              <li>
+                <img src="images/icon-reminders.svg" alt="a reminder icon">
+                <a href="#">Reminders</a>
+              </li>
+
+              <li>
+                <img src="images/icon-planning.svg" alt="a planning icon">
+                <a href="#">Planning</a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="navitem">
+          <ul>
+            <li class="company companyOpen">Company <ion-icon name="chevron-down-outline"></ion-icon></li>
+            <li class="company companyClose hidden">Company <ion-icon name="chevron-up-outline"></ion-icon></li>
+            <ul class="drop2 hidden">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </ul>
+        </div>
+
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+
+      </div>
+
+  </section>
 
   <!-- navbar for desktop -->
   <header>
@@ -63,7 +120,7 @@
           </div>
 
           <a href="#">Careers</a>
-          <a href="#">about</a>
+          <a href="#">About</a>
         </div>
       </div>
 
@@ -99,23 +156,10 @@
     
   </main>
 
-  <!-- Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
- 
-
-
-
-  Learn more -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Yole-dev">Yole</a>.
   </div>
 
   <script src="script.js"></script>

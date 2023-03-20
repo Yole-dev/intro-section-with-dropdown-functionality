@@ -43,3 +43,17 @@ companyClose.addEventListener('click', function() {
 
 
 //nav bar functions for mobile view 
+
+const navBar = document.querySelector('.navigationBar');
+const openBtn = document.querySelector('.openNav');
+const closeBtn = document.querySelector('.closeNav');
+
+openBtn.addEventListener('click', function() {
+    navBar.classList.remove('hidden');
+    openBtn.classList.add('hidden');
+})
+
+closeBtn.addEventListener('click', function() {
+    navBar.classList.add('hidden');
+    openBtn.classList.remove('hidden');
+})
