@@ -2,21 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  Features
+  <!-- navbar for mobile -->
+  <header>
+    <img src="images/logo.svg" alt="company logo">
+    <button class="nav"><img src="images/icon-menu.svg" alt="menu icon"></button>
+  </header>
+
+  <!-- navbar for desktop -->
+  <header>
+    <nav>
+      <div>
+        <img src="images/logo.svg" alt="company logo">
+
+        <div>
+          <div class="navitem">
+            <ul class="firstItem">
+              <li class="features featuresOpen">Features <ion-icon name="chevron-down-outline"></ion-icon></li>
+              <li class="features featuresClose hidden">Features <ion-icon name="chevron-up-outline"></ion-icon></li>
+              <ul class="drop1 hidden">
+                <li>
+                  <img src="images/icon-todo.svg" alt="a todo icon">
+                  <a href="#">Todo list</a>
+                </li>
+
+                <li>
+                  <img src="images/icon-calendar.svg" alt="a calendar icon">
+                  <a href="#">Calendar</a>
+                </li>
+
+                <li>
+                  <img src="images/icon-reminders.svg" alt="a reminder icon">
+                  <a href="#">Reminders</a>
+                </li>
+
+                <li>
+                  <img src="images/icon-planning.svg" alt="a planning icon">
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+
+          <div class="navitem">
+            <ul>
+              <li class="company companyOpen">Company <ion-icon name="chevron-down-outline"></ion-icon></li>
+              <li class="company companyClose hidden">Company <ion-icon name="chevron-up-outline"></ion-icon></li>
+              <ul class="drop2 hidden">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </ul>
+          </div>
+
+          <a href="#">Careers</a>
+          <a href="#">about</a>
+        </div>
+      </div>
+
+      <div>
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <img src="images/image-hero-mobile.png" alt="hero image">
+    <img src="images/image-hero-desktop.png" alt="hero image for desktop">
+
+    <div>
+      <h1> Make remote work</h1>
+      <h1> Make <br> remote work</h1>
+
+      <p>
+        Get your team in sync, no matter your location. <br> Streamline processes, 
+        create team rituals, and <br> watch productivity soar.
+      </p>
+
+      <button>Learn more</button>
+
+      <div>
+        <img src="images/client-databiz.svg" alt="logo for databiz">
+        <img src="images/client-audiophile.svg" alt="logo for audiophile">
+        <img src="images/client-meet.svg" alt="logo for meet">
+        <img src="images/client-maker.svg" alt="logo for maker">
+      </div>
+    </div>
+    
+  </main>
+
+  <!-- Features
   Company
   Careers
   About
@@ -24,16 +107,19 @@
   Login
   Register
 
-  Make remote work
+ 
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
 
-  Learn more
+
+  Learn more -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

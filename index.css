@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+/* default styles begin */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+button {
+    font-family: 'Epilogue', sans-serif
+}
+
+a {
+    color:hsl(0, 0%, 41%);
+    text-decoration: none;
+    font-family: 'Epilogue', sans-serif
+}
+
+/* default styles end */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0.7rem ;
+    margin-bottom: 2rem;
+}
+
+header:last-of-type {
+    display: none;
+}
+
+header img {
+    width: 60px;
+}
+
+header:first-of-type button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    background: inherit;
+}
+
+header button:focus {
+    outline: none;
+}
+
+header button img {
+    width: 25px;
+    height: 12px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main > img {
+    max-width: 100vw;
+    margin-bottom: 1rem;
+}
+
+main > img:last-of-type {
+    display: none;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+}
+
+main h1, p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main h1:last-of-type {
+    display: none;
+}
+
+main p {
+    font-weight: 100;
+    color: hsl(0, 0%, 41%);
+}
+
+main button {
+    background: black;
+    color: white;
+    font-weight: 600;
+    align-self: center;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.7rem;
+    font-family: 'Epilogue', sans-serif;
+}
+
+main button:active {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+main button:focus {
+    outline: none;
+}
+
+main > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2.5rem;
+}
+
+main div div img {
+    width: 50px;
+    height: 16px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin: 1rem 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/* display toggle class */
+
+.hidden {
+    display: none !important;
+}
+
+
+@media  screen and (min-width: 600px) {
+
+    header:first-of-type {
+        display: none;
+    }
+
+    header:last-of-type {
+        display: block;
+        padding: 2rem 3rem;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav > div {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    header nav > div > div {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    header nav > div button:first-of-type {
+        border: none;
+        background: inherit;
+        color:hsl(0, 0%, 41%);
+    }
+
+
+    header nav > div button:last-of-type {
+        border: 1px solid hsl(0, 0%, 41%);
+        width: 85px;
+        height: 30px;
+        border-radius: 10px;
+        background: inherit;
+        color:hsl(0, 0%, 41%);
+    }
+
+    header nav > div button:last-of-type:hover {
+        color: black;
+        border: 1px solid black;
+    }
+
+    .navitem > ul {
+        list-style-type: none;
+        color: hsl(0, 0%, 41%);
+    }
+
+    .navitem > ul > ul {
+        position: absolute;
+        box-shadow: 0 1px 10px;
+        margin-top: 1.5rem;
+        background: white;
+        padding: 1rem;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .firstItem > ul {
+        left: 6rem;
+    }
+
+    .navitem > ul > ul img {
+        width: 15px;
+    }
+
+    .navitem > ul > ul li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .navitem > ul li {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .navitem > ul li:hover {
+        color: black;
+    }
+
+    nav > div > div a {
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+    }
+
+    nav > div > div a:hover {
+        color: black;
+    }
+
+    header nav div img {
+        width: 60px;
+    }
+
+
+    main {
+        flex-direction: row-reverse;
+        align-items: end;
+        justify-content: center;
+        gap: 7rem;
+        padding: 0 1rem;
+    }
+
+    main > img:first-of-type {
+        display: none;
+    }
+
+    main > img:last-of-type {
+        display: block;
+        max-width: 50vw;
+        max-height: 70vh;
+    }
+
+    main > div {
+        align-items: start;
+    }
+
+    main div h1:first-of-type {
+        display: none;
+    }
+
+    main h1:last-of-type {
+        font-size:60px;
+        display: block;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    main p {
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    main > div button {
+        align-self: start;
+        margin-bottom: 3rem;
+    }
+
+    main > div > div {
+        width: 100%;
+    }
+}
